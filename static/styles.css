@@ -1,0 +1,207 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+
+    width: 100% !important;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+
+
+.text-center
+{
+    text-align: center!important;
+}
+
+.mb-0
+{
+    margin-bottom: 0!important;
+}
+
+.alert
+{
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-primary
+{
+    color: #009736;
+    background-color: #d1ffd4;
+}
+
+main .container
+{
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-right
+{
+    text-align: right!important;
+}
+
+.table
+{
+    width: 100% !important;
+}
+
+.border-0
+{
+    border: 0!important;
+    border-top-color: initial !important;
+    border-top-style: initial !important;
+    border-top-width: 0px !important;
+    border-right-color: initial !important;
+    border-right-style: initial !important;
+    border-right-width: 0px !important;
+    border-bottom-color: initial !important;
+    border-bottom-style: initial !important;
+    border-bottom-width: 0px !important;
+    border-left-color: initial !important;
+    border-left-style: initial !important;
+    border-left-width: 0px !important;
+    border-image-source: initial !important;
+    border-image-slice: initial !important;
+    border-image-width: initial !important;
+    border-image-outset: initial !important;
+    border-image-repeat: initial !important;
+}
+
+.fw-bold {
+    font-weight: 700!important;
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+.map-container {
+    height: 100% !important;
+    width: 100%;
+    position: relative;
+}
+
+#map {
+    height: 500px;
+}
+
+a, a:hover {
+    text-decoration: none !important;
+    transition: .3s all ease;
+}
+
+footer {
+    text-align: center;
+}
+
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    width: auto;
+}
+
+#origin-input,
+#destination-input
+{
+    width: 250px;
+}
+
+#date-input,
+#submit,
+#origin-input,
+#destination-input
+{
+    background-color: #fff;
+    font-family: Roboto !important;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+    border-color: #4d90fe;
+}
+
+#travel-type-selector {
+    font-family: Roboto !important;
+}
+
+form label {
+    font-family: Roboto !important;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+form input {
+    margin-left: 12px;
+}
+
+#submit
+{
+    background-color: #007bff !important;
+}
+
+#doughnutChart {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

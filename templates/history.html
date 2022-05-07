@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+    - Travel History
+
+{% endblock %}
+
+{% block main %}
+
+    <div class="section">
+        <form method="POST" id="history">
+            <table class="table table-striped">
+                <thead>
+                    <th>Date</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Distance (km)</th>
+                    {# <th>Duration (hour)</th> #}
+                    <th>Travel Type</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <!-- Loop through records -->
+                    {% for record in records %}
+                        <tr>
+                            <td id={{ record.rowid }}>{{ record.date }}</td>
+                            <td id={{ record.rowid }}>{{ record.origin_name}} </td>
+                            <td id={{ record.rowid }}>{{ record.destination_name }}</td>
+                            <td id={{ record.rowid }}>{{ record.distance/1000 }}</td>
+                            {# <td id={{ record.rowid }}>{{ record.duration }}</td> #}
+                            <td id={{ record.rowid }}>{{ record.travel_type }}</td>
+                            <td><a href="{{ url_for("delete", rowid = record.rowid) }}">Delete</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+{% endblock %}

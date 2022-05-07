@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block title %}
+
+    - Homepage
+
+{% endblock %}
+
+{% block main %}
+  <form id="distance-record" action="/" method="post">
+
+    <!-- Travel type input work/personal -->
+    <input type="radio" name="travel-type" id="travel-work" checked="checked" value="Work"/>
+    <label for="travel-work">Work</label>
+    <input type="radio" name="travel-type" id="travel-personal" value="Personal"/>
+    <label for="travel-personal">Personal</label>
+
+    <!-- Date input -->
+    <input id="date-input" class="controls" name="date" type="date" placeholder="Select date" required/>
+
+    <!-- Checkbox for same day return -->
+    <input type="checkbox" id="same-day-return" name="same-day-return" value="True" checked>
+    <label for="same-day-return">Same day return</label>
+
+    <!-- Submit button -->
+    <button id="submit" class="controls btn-primary" type="submit">Submit</button>
+
+    <!-- Map controls div with origin input and destination input -->
+    <div id="map-controls" class="form-group">
+      <input id="origin-input" class="controls" name="origin" type="text" placeholder="Enter an origin location"/>
+      <input id="destination-input" class="controls" name="destination" type="text" placeholder="Enter a destination location"/>
+    </div>
+
+    <!-- div for map -->
+    <div id="map"></div>
+    <script src="/static/gmap.js"></script>
+  </form>
+    <script
+          src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&callback=initMap&libraries=places&v=weekly"
+          async
+    ></script>
+
+{% endblock %}
